@@ -1,0 +1,23 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: Montserrat;
+}
+
+footer {
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+@font-face {
+    src: url(../font/Montserrat-Light.ttf);
+    font-family: Montserrat;
+}
+
+
