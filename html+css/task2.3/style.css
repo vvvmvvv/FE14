@@ -1,0 +1,10 @@
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#Decimal-zero {
+    list-style-type: decimal-leading-zero;
+  }

@@ -1,0 +1,9 @@
+td, th {
+    border: 1px solid black;
+}
+
+.styling {
+    width: 450px; 
+    height: 150px;
+    border: 1px solid black;
+}
