@@ -1,18 +1,56 @@
 html{
     box-sizing: border-box;
 }
+body{
+    background-color: darkgray;
+    
+}
 
 .container{
+    background-color: white;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    border: 2px solid black;
 
 }
+.inner{
+    background-color: thistle;
+}
 
-/* .wrapper{
-    display: flex;
-} */
+nav li{
+    display: inline; 
+    margin: 35px; 
+    list-style: none;
+    border: 2px solid black;
+    padding: 10px; 
 
-.inner__head{
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+
+.wrapper{
+   background-color: whitesmoke;
+}
+
+.photos{
     display: flex;
+    background-color: white;
+}
+
+footer{
+    background-color:thistle ;
+    margin: 5px;
+}
+.motivatation-content{
+display: flex;
+}
+.photos{
+    display: flex;
+    align-items: center;
 }

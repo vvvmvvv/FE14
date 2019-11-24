@@ -11,110 +11,137 @@
 
 <body>
     <div class="container">
-        
-            
-            <header>
-                    <div class="inner__head">
-                <h1>Vladimir Mikulin</h1>
-                <hr>
-                <div class="nav">
+
+
+        <header>
+            <h1 align="center">Vladimir Mikulin</h1>
+            <hr>
+            <div class="inner">
                 <nav>
+
                     <ul>
                         <li><a href="#about">A little bit about me</a></li>
                         <li><a href="#prog">My front-end way</a></li>
                         <li><a href="#photos">My Photos</a></li>
+                        <li><a href="#motivation">Motivation</a></li>
                         <li><a href="#contact">Contact me</a></li>
+
                     </ul>
                 </nav>
-                </div>
-                <div class="main__image">
-                    <aside class="img-right">
-                        <img src="img/ya1.jpg" alt="yaaaa" height="200px" width="200px">
-                    </aside>
-                </div>
             </div>
-            </header>
-            </div>
+        </header>
 
-            <div class="wrapper">
+        <div class="wrapper">
             <main>
-            
-        
-        
-        <article id="#about">
-            <h3>A little bit about me</h3>
-            My name is Vova. I live in Kiev.
-        </article>
-        <hr>
-        
-            <section id="#prog">
-                <h3>My front-end way</h3>
-                I started programming since I had entered the university.
-                We had a great young tutor,who inspired to study hard.
-                During the first term, I`ve learned all the low-level programming stuff in pure C.
-                As a course work for the second term, I made a client-server application with Qt using C++.
-                During the second year , I`ve been stydying and making university projects in the web development
-                sphere.
-            </section>
-        
-    
-    
-    <hr>
-    <section id="#photos">
-        <h3>My photos</h3>
-        <figure>
-            <img src="img/ya2.jpg" alt="" height="350px" width="350px">
-            <figcaption> I`m at the sea!</figcaption>
-        </figure>
-        <figure>
-            <img src="img/ya1.jpg" alt="" height="350px" width="350px">
-            <figcaption> I`m at the roof!</figcaption>
-        </figure>
-    </section>
 
-    <section id="contact">
-        <form action="#" method="post">
-            <h2>Some proposition?</h2>
-            <p>
-                <input type="text" name="fullname" id="fullname" required placeholder="Name">
-            </p>
-            <p>
-                <input type="email" name="email" id="email" required placeholder="email@example.com">
-            </p>
-            <p>
-                <input name="tel" id="tel" placeholder="+38999999999" required>
-            </p>
-            <p>Comments:</p>
-            <p><input list="character">
-                <datalist id="character">
-                    <option value="Walking"></option>
-                    <option value="Working"></option>
-                    <option value="Questions"></option>
-                </datalist>
-            </p>
-            <button type="submit">Send</button>
-        </form><br>
+                <picture>
+                    <source srcset="img/ya6.jpg" />
+                    <img src="img/ya6.jpg" alt="Vladimir Mikulin" width="300" height="300">
+                </picture>
+                <article id="about">
+                    <h3>A little bit about me</h3>
+
+                    My name is Vova. I live in Kiev.I`m 19 years old. My hometown is Kharkiv.
+                </article>
+
+                <hr>
+
+                <section id="prog">
+                    <h3>My front-end way</h3>
+                    I started programming since I had entered the university.
+                    We had a great young tutor,who inspired to study hard.
+                    During the first term, I`ve learned all the low-level programming stuff in pure C.
+                    As a course work for the second term, I made a client-server application with Qt using C++.
+                    During the second year , I`ve been stydying and making university projects in the web development
+                    sphere.
+                    <details>
+                        <summary><mark>My dream</mark></summary><br>
+                        <span dir="rtl">(= <bdi>dev</bdi> I want to be a good </span>
+                        <br>
+                        <label for="dream">Dream difficulty:</label>
+                        <meter id="dream" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                        </meter>
+                        <label for="dream">Done for dream:</label>
+                        <progress max="100" value="25">
+                        </progress>
+                    </details>
+                </section>
+
+
+
+                <hr>
+                <section id="photos">
+                    <h3>My photos</h3>
+                    <div class="photos">
+
+
+                        <figure>
+                            <img src="img/ya2.jpg" alt="" height="500px" width="500px">
+                            <figcaption> I`m at the sea!</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/ya1.jpg" alt="" height="500px" width="500px">
+                            <figcaption> I`m at the roof!</figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+                <hr>
+                <section id="motivation">
+                    <h3>Motivation</h3>
+                    <div class="motivatation-content">
+
+                        <video width="500" height="400" controls>
+                            <source src="video/motivation.webm">
+                            <track kind="subtitles" src="video/motivation.webm" srclang="ru" label="Русский">
+                        </video>
+                        <aside>
+                            <p>In this world, nothing is impossible.</p>
+                            <audio controls>
+                                <source src="audio/motivation_audio.mp3" type="audio/mpeg">
+                                <a href="audio/motivation_audio.mp3">Скачайте музыку</a>.
+                            </audio>
+                        </aside>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <hr>
+                    <br>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Some questions?</legend>
+                            <p><label for="name"> Name: </label><input type="text" id="name"></p>
+                            <p><label for="email">E-mail:</label><input type="email" id="email"></p>
+                            <label for="theme">Something:</label>
+                            <input list="theme">
+                            <datalist id="theme">
+                                <option value="Walking"></option>
+                                <option value="Working"></option>
+                                <option value="Personal questions"></option>
+                            </datalist>
+                            <p><input type="submit" value="Send"></p>
+                        </fieldset>
+
+                    </form>
+                </section>
+                <template>
+                    <canvas">
+                        With js
+                        </canvas>
+                        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/template">Отображения с помощью
+                            джс</a>
+                </template>
+
+                <dialog>
+                    <p>Thank you for watching!)</p>
+                </dialog>
+            </main>
+        </div>
         <hr>
-    </section>
-    <details>
-        <mark> My dreams:</mark>
-        <summary>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veritatis aspernatur omnis aliquam, quod
-            debitis quis esse itaque nam vero at ullam repellendus saepe unde, natus consectetur autem! Veritatis,
-            aperiam voluptas neque rem quis pariatur labore deserunt! Accusantium in exercitationem doloremque unde
-            architecto id quisquam officia eveniet nulla consequuntur harum pariatur, quae aperiam nemo ipsa amet.
-            Repellendus expedita sint recusandae tempora harum necessitatibus, quia vero placeat dolorem veritatis unde
-            reprehenderit officia officiis laboriosam laborum ullam consectetur. Pariatur minus neque nostrum nesciunt.
-            Natus reiciendis neque aut blanditiis exercitationem unde quod laudantium corporis facilis eaque iure
-            repudiandae, sequi, ea ab eius eos.
-        </summary>
-    </details>
-    <hr>
-</main>
-</div>
-    <footer>
-        Developed by web-maser 2019.
-    </footer>
+        <footer>
+            Developed by<wbr> Vladimir<wbr> Mikulin <time>2019</time>.
+        </footer>
     </div>
 
 </body>
