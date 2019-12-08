@@ -5,9 +5,25 @@
 }
 
 
+
+body{
+
+  background-color: gray;
+}
+.container{
+  background-color: white;
+  max-width:1170px;
+  margin: 0 auto;
+  padding: 50px ;
+}
+
+
+
+/*----------------------------------------------------------------*/
 /*----------------------------- Task1-----------------------------*/
+/*----------------------------------------------------------------*/
 .first_font {
-    font-family: Tomorrow, sans-serif;
+    font-family: Tomorrow, sans-serif;   
 }
 
 .second_font p {
@@ -18,81 +34,151 @@
     font-family: 'Permanent Marker', cursive;
 }
 
-
+/*----------------------------------------------------------------*/
 /*----------------------------- Task2-----------------------------*/
+/*----------------------------------------------------------------*/
 
-
-ul {
-  list-style: none;
-  display: inline-table;
+a {
+  text-decoration: none;
 }
-  li {
-    display: inline;
-  }
-    a {
-    display: block;
-    float: left;
-    height: 50px;
-    background: #F3F5FA;
-      
-    text-align: center;
-    padding: 30px 20px 0 60px;
-    position: relative;
-    margin: 0 10px 0 0; 
-    
-    font-size: 20px;
-    text-decoration: none;
-    color: blue;
 
-    }
+li {
+  list-style-type: none;
+}
+
+
+.breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  background-color: #caf4fb;
+  padding: 3px;
+  width: 360px;
+}
+
+.breadcrumbs-item {
+  list-style-type: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  background-color: #00bddb;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.breadcrumbs-item a {
+  color: #ffffff;
+  display: inline-block;
+}
+
+.breadcrumbs-item:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  border-left: 20px solid #caf4fb;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 0;
+}
+
+.breadcrumbs-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: -19px;
+  border-left: 20px solid #00bddb;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 0;
+  z-index: 1;
+}
+
+.breadcrumbs-item:hover {
+  background-color: #1d3e8b;
+}
+
+.breadcrumbs-item:hover:before {
+  border-left: 20px solid #1d3e8b;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+/*----------------------------------------------------------------*/
 /*----------------------------- Task3-----------------------------*/
+/*----------------------------------------------------------------*/
 
-.radio {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: 10px 0 0 7px;
-}
-.radio + label {
-	position: relative;
-	padding: 0 0 0 35px;
-	cursor: pointer;
-}
-.radio + label:before {
-	content: '';
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 22px;
-	height: 22px;
-	border: 1px solid #CDD1DA;
-	border-radius: 50%;
-	background: #FFF;
-}
-.radio + label:after {
-	content: '';
-	position: absolute;
-	top: 1px;
-	left: 4px;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background: #9FD468;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
-	opacity: 0;
-	transition: .2s;
-}
-.radio:checked + label:after {
-	opacity: 1;
-}
-.radio:focus + label:before {
-	box-shadow: 0 0 0 3px rgba(255,255,0,.7);
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
+.radiobutton-item {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.input-radio + label::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #017f04;
+    border-radius: 50%;
+    background-color: #fafafa;
+}
+
+.input-radio + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -19px;
+    width: 8px;
+    height: 8px;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+}
+
+.input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -19px;
+    width: 8px;
+    height: 8px;
+    background-color: #017f04;
+    border-radius: 50%;
+}
+
+.input-radio:checked + label::before {
+    background-color: #d2d2d2;
+}
 
 
+
+/*----------------------------------------------------------------*/
 /*----------------------------- Task4-----------------------------*/
+/*----------------------------------------------------------------*/
+
 
 .switch {
   position: relative;
@@ -148,5 +234,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-  /*----------------------------------------------------------*/

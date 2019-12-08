@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Task 4</title>
+    <title>HTML_CSS_Task 4</title>
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Amatic+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>  
-
+<div class="container">
     <div class="first_task">
         <h2>First Task</h2>
         <div class="first_font">
@@ -57,14 +57,12 @@
 <!------------------------------------------------------------------------------------------------------ --->
 
     <div class="second_task">
-        <h2>Second Task</h2>
-        <div id="crumbs">
-              <ul>
-                  <li><a href="#1"> One</a></li>
-                  <li><a href="#2"> Two</a></li>
-                  <li><a href="#3"> Three</a></li>
-                  
-              </ul>
+        <h2 class="breadcrumbs">Task 2</h2>
+        <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item"><a href="#ONE">One</a></li>
+            <li class="breadcrumbs-item"><a href="#TWO">Two</a></li>
+            <li class="breadcrumbs-item"><span>Three</span></li>
+        </ul>
 
 
 
@@ -72,29 +70,31 @@
     <hr>
 <!----------------------------------------------------------------------------------------------------------->
     <div class="third_task">
-            <h2>Third Task</h2>
+            <h2> Task 3</h2>
             
-            <input type="radio" class="radio" id="radio" />
-            <label for="radio"></label>
-            
-            <input type="radio" class="radio" id="radio" />
-            <label for="radio"></label>
+            <ul class="radiobutton-list">
+                <li class="radiobutton-item">
+                    <input class="visually-hidden input-radio" type="radio" name="option" value="yes" id="yes" checked>
+                    <label for="yes">YES</label>
+                </li>
+                <li class="radiobutton-item">
+                    <input class="visually-hidden input-radio" type="radio" name="option" value="no" id="no">
+                    <label for="no">NO</label>
+                </li>
+            </ul>
     
     
         </div>
 <hr>
 <!----------------------------------------------------------------------------------------------------------->
     <div class="fourh_task">
-            <h2>Four Task</h2>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label> 
+            <h2> Task 4</h2>
       <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label> 
         </div>
+    </div>
 </body>
 
 </html>
