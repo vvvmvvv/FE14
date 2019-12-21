@@ -1,72 +1,472 @@
-html{
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
     box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
+    display: inline-block;
 
 }
 
-body{
+body {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
 
 }
-.container{
+
+.container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
 
 }
 
-.header{
+
+.header {
     border-top: 1px solid black;
 
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 87px;
 }
 
-.menu__list{
-    display:flex;
+.menu__list {
+    display: flex;
     list-style: none;
 }
-.menu__list li+li{
+
+.menu__list li+li {
     margin-left: 38px;
 
 }
-.menu__list a{
+
+.menu__list a {
     font-size: 14px;
     color: black;
     font-weight: 700;
 }
-.top{
-    background-color:  paleturquoise;
+
+.top {
+    background-color: paleturquoise;
     padding-top: 150px;
     padding-bottom: 180px;
 }
 
-.top-info{
-
-}
-.top__inner{
-    display:flex;
+.top__inner {
+    display: flex;
     justify-content: space-between;
 }
 
-.block2{
-    background-color:  violet;
-    background: url(/img/main_image.png) center no-repeat ;
-    z-index: 5;
-    padding-top: 150px;
-    padding-bottom: 180px;
+.top-info {
+    max-width: 550px;
+    color: blue;
+    margin-right: 35px;
+
+}
+
+.top-info__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+
+}
+
+
+.top-info__list {
+    list-style: none;
+    margin-bottom: 50px;
+
+}
+
+.top-info__btn {
+    color: black;
+    text-transform: uppercase;
+    border: 3px solid blueviolet;
+    margin-top: 30px;
+    padding: 13px 44px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.top-info__btn:hover{
+    background-color:cornflowerblue;
+}
+
+.top-info__btn-descr {
+    margin-top: 20px;
+}
+
+
+#checkbox-menu,
+.toggle {
+    display: none;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    align-self: center;
+    font-size: 13px;
+    padding: 10px 13px;
+    transition: background 0.2s linear;
+}
+
+.menu li a:hover {
+    background: blue;
+    border-radius: 3px;
+}
+
+.menu li a.logo {
+    font-size: 25px;
+    margin-right: 150px;
+}
+
+.menu li a.contacts {
+    margin-right: 50px;
+}
+
+
+
+
+.our-advantages {
+    padding: 100px 0 120px;
+    background-color: bisque;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 35px auto 125px;
+}
+
+.our-advantages__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-advantages__item {
+    max-width: 360px;
+    box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+.our-advantages__number {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: blue;
+}
+
+
+.our-advantages__images {
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-advantages__title {
+    margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 700;
+    color: blue;
+
+}
+
+.our-advantages__text {
+    margin-bottom: 50px;
+}
+
+
+.our-advantages__list {
+    margin-bottom: 75px;
+    list-style: none;
+}
+
+.our-advantages__list li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    padding-left: 36px;
+}
+
+.our-advantages__btn {
+    
+    font-size: 17px;
+    color: white;
+    background-color: blue;
+    font-weight: 700;
+    border-radius: 20%;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 20px auto;
+
+}
+
+.our-advantages__btn:hover{
+    background-color: cyan;
+    color: indigo;
+}
+
+
+.contacts{
+    padding: 100px 0 120px;
+    background-color: turquoise;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container_forcontacts {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+.about {
+    padding: 100px 0 120px;
+    background-color: thistle;
+}
+
+.footer__wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 964px) {
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .menu li {
+        display: flex;
+        width: 30%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .toggle {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #000000;
+        background: #ffcc01;
+        transition: all .1s linear;
+
+    }
+
+    .toggle:hover {
+        background: #d3a900;
+    }
+
+    #checkbox-menu:checked+label .touch li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+    }
+
+    #checkbox-menu:checked+label .touch {
+        height: 350px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+
+    .menu li {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    .menu li a {
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+
+    }
+
+    .menu li a.logo {
+        font-size: 21px;
+        margin-right: 0px;
+    }
+
+    .menu li a.contacts {
+        margin-right: 0px;
+    }
+
 }

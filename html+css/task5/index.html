@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task 5</title>
     <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/9561e81b56.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,13 +22,16 @@
                     </a>
                 </div>
                 <nav class="menu">
-                    <ul class="menu__list">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#aboutUs">ABOUT US</a></li>
-                        <li><a href="#ourAdvantages">OUR ADVANTAGES</a></li>
-                        <li><a href="#contacts">CONTACTS</a></li>
-                    </ul>
-
+                    <input type="checkbox" id="checkbox-menu">
+                    <label for="checkbox-menu">
+                        <ul class="menu touch">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#ourAdvantages">OUR ADVANTAGES</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#contacts">CONTACTS</a></li>
+                        </ul>
+                        <span class="toggle">☰</span>
+                    </label>
                 </nav>
 
             </div>
@@ -42,7 +46,7 @@
             <div class="top__inner">
                 <div class="top-info">
                     <div class="top_info__subtitle">
-                        Do some - to do something
+                        <strong> Do some - to do something</strong><br>
                         We do all cites and telegram-bot all harder skills
                     </div>
                     <h1 class="top-info__title">
@@ -52,9 +56,9 @@
                         Please choose what you want to check:
                     </div>
                     <ul class="top-info__list">
-                        <li> <a href="#"> About</a></li>
-                        <li><a href="#"> Our Advantages</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#ourAdvantages"> <i class="far fa-hand-point-right"> Our Advantages</i></a></li>
+                        <li> <a href="#about"> <i class="far fa-hand-point-right"> About</i></a></li>
+                        <li><a href="#contacts"><i class="far fa-hand-point-right"> Contacts</i></a></li>
                         <li>24/7 Support</li>
                     </ul>
                     <a class="top-info__btn" href="#">Get Started Now!</a>
@@ -79,49 +83,218 @@
             </div>
         </div>
     </section>
-    <section class="block2">
 
-            <div class="container">
-                <div class="top__inner">
-                    <div class="top-info">
-                        <div class="top_info__subtitle">
-                            Do some - to do something
-                            We do all cites and telegram-bot all harder skills
-                        </div>
-                        <h1 class="top-info__title">
-                            MIKI-LOM Production
-                        </h1>
-                        <div class="top-info__descr">
-                            Please choose what you want to check:
-                        </div>
-                        <ul class="top-info__list">
-                            <li> <a href="#"> About</a></li>
-                            <li><a href="#"> Our Advantages</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a class="top-info__btn" href="#">Get Started Now!</a>
-                        <div class="top-info__btn-descr">
-                            * Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, fugit sapiente ipsam totam
-                            non nihil officiis voluptatum facere nam quae aperiam, accusantium molestiae culpa! Quas
-                            delectus ab repellat architecto deleniti qui quae quisquam voluptates. Accusamus molestiae
-                            reprehenderit quos? Velit, a.
+
+    <section class="our-advantages">
+        <div class="container">
+            <h3 id="ourAdvantages" class="title">
+                Our advantages
+            </h3>
+
+
+
+            <div class="our-advantages__items">
+                <div class="our-advantages__item">
+                    <div class="our-advantages__number">
+                        #1<span>/for you</span>
+                    </div>
+                    <div class="our-advantages__images">
+                        <img src="img/img1.png" alt="" height="200px" width="200px">
+                    </div>
+                    <div class="our-advantages__title">
+                        Lorem1
+                    </div>
+                    <div class="our-advantages__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero esse qui voluptatibus
+                        facilis! Assumenda inventore voluptate, beatae nisi eveniet quaerat, non at asperiores
+                    </div>
+                    <ul class="our-advantages_list">
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ul>
+                    <a class="our-advantages__btn" href="#">Let`s GO</a>
+                </div>
+
+                <div class="our-advantages__item">
+                    <div class="our-advantages__number">
+                        #2<span>/for you</span>
+                    </div>
+                    <div class="our-advantages__images">
+                        <img src="img/img2.jpg" alt="" height="200px" width="200px">
+                    </div>
+                    <div class="our-advantages__title">
+                        Lorem2
+                    </div>
+                    <div class="our-advantages__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero esse qui voluptatibus
+                        facilis! Assumenda inventore voluptate, beatae nisi eveniet quaerat, non at asperiores
+                    </div>
+                    <ul class="our-advantages_list">
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ul>
+                    <a class="our-advantages__btn" href="#">Let`s GO</a>
+                </div>
+
+
+                <div class="our-advantages__item">
+                    <div class="our-advantages__number">
+                        #3<span>/for you</span>
+                    </div>
+                    <div class="our-advantages__images">
+                        <img src="img/img3.jpg" alt="" height="200px" width="200px">
+                    </div>
+                    <div class="our-advantages__title">
+                        Lorem3
+                    </div>
+                    <div class="our-advantages__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero esse qui voluptatibus
+                        facilis! Assumenda inventore voluptate, beatae nisi eveniet quaerat, non at asperiores
+                    </div>
+                    <ul class="our-advantages_list">
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ul>
+                    <a class="our-advantages__btn" href="#">Let`s GO</a>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="about">
+
+        <div class="container">
+            <h3 id="about" class="title">
+                About
+            </h3>
+            <div class="top__inner">
+                <div class="top-info">
+                    <div class="top_info__subtitle">
+                        <strong> Do some - to do something</strong><br>
+                        We do all cites and telegram-bot all harder skills
+                    </div>
+                    <h1 class="top-info__title">
+                        MIKI-LOM Production
+                    </h1>
+
+                    <div class="top-info__btn-descr">
+                        * Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, fugit sapiente ipsam totam
+                        non nihil officiis voluptatum facere nam quae aperiam, accusantium molestiae culpa! Quas
+                        delectus ab repellat architecto deleniti qui quae quisquam voluptates. Accusamus molestiae
+                        reprehenderit quos? Velit, a.
+                    </div>
+                    <hr>
+                    <div class="top-info__btn-descr">
+                        * Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, fugit sapiente ipsam totam
+                        non nihil officiis voluptatum facere nam quae aperiam, accusantium molestiae culpa! Quas
+                        delectus ab repellat architecto deleniti qui quae quisquam voluptates. Accusamus molestiae
+                        reprehenderit quos? Velit, a.
+                    </div>
+                    <hr>
+                    <div class="top-info__btn-descr">
+                        * Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, fugit sapiente ipsam totam
+                        non nihil officiis voluptatum facere nam quae aperiam, accusantium molestiae culpa! Quas
+                        delectus ab repellat architecto deleniti qui quae quisquam voluptates. Accusamus molestiae
+                        reprehenderit quos? Velit, a.
+                    </div>
+                    <a class="top-info__btn" href="#">Get Started Now!</a>
+                </div>
+
+                <div class="top-images">
+                    <div class="top-images__box">
+                        <img src="img/about2.png" alt="" height="500px" width="600px">
+                    </div>
+                    <div class="top-images__circle">
+                        <div class="top-images__img">
+                            <img src="" alt="">
                         </div>
                     </div>
-                    <div class="top-images">
-                        <div class="top-images__box">
-                            <img src="img/developers_main.png" alt="" height="400px" width="500px">
-                        </div>
-                        <div class="top-images__circle">
-                            <div class="top-images__img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-    
-                    </div>
+
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+
+            <div class="container">
+                <h3 id="contacts" class="title">
+                    Contacts
+                </h3>
+                <div class="top-info__btn-descr">
+                        * We can find us 
+                </div>
+                <hr>
+            <div class="contacts__map">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.5661046231517!2d30.485059715867028!3d50.43055529667914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9e88c9d2f%3A0x1b11dcb5203b8420!2sEpam!5e0!3m2!1sru!2sua!4v1576967295034!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <hr>
+            <br>
+            <div class="top-info__btn-descr">
+                    * Contact us 
+            </div>
+            <div class="container_forcontacts">
+             
+            <form action="#">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+                </form>
+            </div>
+            </div>
         </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="social">
+                    <a href="https://uk-ua.facebook.com/" target="_blank">
+                        <img src="img/facebook.png" alt="" height="40px" width="35px"></a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="img/linka.png" alt="" height="40px" width="35px"></a>
+
+                    <a href="https://github.com/" target="_blank">
+                        <img src="img/github.png" alt="" height="40px" width="35px"></a>
+                </div>
+                <div class="copyright">
+                    &copy; Designed by Vladimir Mikulin | 2019
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
