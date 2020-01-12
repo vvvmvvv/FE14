@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+.container__background {
+    position: relative;
+    width: 768px;
+    height: auto;
+}
+
+.container__background-left,
+.container__background-right {
+    position: absolute;
+    top: 55px;
+    width: 315px;
+    height: 410px;
+
+}
+
+.container__background-left {
+    left: 70px;
+}
+
+.container__background-right {
+    left: 385px;
+}
+
+.container__button-left,
+.container__button-right {
+    position: absolute;
+    top: 422px;
+    width: 30px;
+    height: 30px;
+}
+
+.container__button-left {
+    left: 337px;
+}
+
+.container__button-right {
+    left: 400px;
+}
+
+.container__input-left,
+.container__input-right {
+    position: absolute;
+}
+
+.container__input-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 78px;
+    left: 140px;
+}
+
+.container__input-right {
+    top: 425px;
+    left: 445px;
+}
+
+.container__money img {
+    width: 17px;
+    height: 17px;
+}
+
+.container__money,
+.container__gold {
+    display: flex;
+    flex-direction: row;
+    background: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 7px;
+    width: 174px;
+    text-align: center;
+    height: 17px;
+    margin-bottom: 5px;
+}
+
+.container__flex-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 55px;
+    left: 405px;
+    width: 280px;
+    height: 182px;
+}
+
+.flex__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__flex-right .flex__block:nth-child(2) {
+    align-self: flex-end;
+}
+
+.flex__subblock {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex__subblock .flex__item1 {
+    background: none;
+    color: #000000;
+    text-align: center;
+    height: 18px;
+    font-weight: bold;
+}
+
+.flex__item1,
+.flex__item2,
+.flex__item3,
+.flex__item4,
+.flex__item5,
+.flex__item6,
+.grid__item {
+    background: #000000;
+    border: 1px solid #cccccc;
+}
+
+.flex__item1 {
+    width: 26px;
+    height: 18px;
+}
+
+.flex__item2,
+.grid__item {
+    width: 26px;
+    height: 26px;
+}
+
+.flex__item3 {
+    width: 52px;
+    height: 52px;
+}
+
+.flex__item4 {
+    width: 52px;
+    height: 78px;
+}
+
+.flex__item5 {
+    width: 52px;
+    height: 104px;
+}
+
+.flex__item6 {
+    width: 52px;
+    height: 26px;
+}
+
+.container__grid-left,
+.container__grid-right {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.container__grid-left {
+    top: 130px;
+    left: 85px;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.container__grid-right {
+    top: 245px;
+    left: 405px;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.footer__circle-left,
+.footer__circle-right {
+    position: absolute;
+    top: 465px;
+    width: 90px;
+    height: 90px;
+}
+
+.footer__circle-left {
+    left: 25px;
+}
+
+.footer__circle-right {
+    left: 650px;
+}
+
+.footer__red-left,
+.footer__red-right {
+    position: absolute;
+    top: 524px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer__red-left {
+    left: 120px;
+}
+
+.footer__red-right {
+    left: 605px;
+}
+
+.footer__square-left,
+.footer__square-right {
+    position: absolute;
+    top: 530px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__square-left {
+    left: 185px;
+}
+
+.footer__square-right {
+    left: 550px;
+}
+
+.footer__container-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 505px;
+    left: 230px;
+}
+
+.footer__container-right {
+    display: flex;
+    position: absolute;
+    top: 530px;
+    left: 415px;
+}
+
+.footer__speed,
+.footer__health {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__button-center {
+    position: absolute;
+    top: 524px;
+    left: 364px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer__speed-white {
+    background: #ffffff;
+    width: 17px;
+    height: 4px;
+}
+
+.footer__speed-black {
+    background: #000000;
+    width: 103px;
+    height: 4px;
+}
+
+.footer__health img {
+    width: 17px;
+    height: 17px;
+}
+
+.footer__health {
+    background: #fada5e;
+    border: 1px solid #ffffff;
+    width: 120px;
+    height: 17px;
+}
+
+.runa {
+    background-image: url("../img/runa.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.runa-branch {
+    background-image: url("../img/runa-branch.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.runa-pear {
+    background-image: url("../img/runa-pear.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.runa-time {
+    background-image: url("../img/runa-time.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.runa_cristall {
+    background-image: url("../img/runa-cristall.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.triangle {
+    background-image: url("../img/triangle.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.paper {
+    background-image: url("../img/paper.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.orange-ring {
+    background-image: url("../img/orange-ring.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.gold-ring {
+    background-image: url("../img/gold-ring.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.medal {
+    background-image: url("../img/medal.png");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.crown {
+    background-image: url("../img/crown.jpg");
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.belt {
+    background-image: url("../img/belt.png");
+    background-repeat: no-repeat;
+}
+
+.armor {
+    background-image: url("../img/armor.png");
+    background-repeat: no-repeat;
+}
+
+.sword {
+    background-image: url("../img/sword.png");
+    background-repeat: no-repeat;
+}
+
+.shoes {
+    background-image: url("../img/shoes.png");
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+}
+
+.helmet {
+    background-image: url("../img/helmet.png");
+    background-repeat: no-repeat;
+}
+
+.gloves {
+    background-image: url("../img/gloves.png");
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+}
